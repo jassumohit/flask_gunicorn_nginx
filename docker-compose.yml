@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+
+  flaskapp:
+    build: .
+    image: flask_gunicorn:latest
+    container_name: flaskapp
+    #ports:
+    #  - "5000:5000"
+    #network_mode: bridge
+
+  nginx:
+    build: ./nginx
+    image: nginxnew:latest
+    container_name: nginx
+    environment:
+      - SERVER_NAME=0.0.0.0
+    ports:
+      - "80:80"
+    restart: always
+    #network_mode: bridge
+
+networks:
+  default:
+    driver: bridge
