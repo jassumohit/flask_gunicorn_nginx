@@ -1,10 +1,8 @@
 FROM python:alpine3.12
 
-COPY requirements.txt ./
+WORKDIR /app
 
-COPY SampleFlask.py ./
-
-COPY wsgi.py ./
+COPY ./ ./
 
 RUN pip install -r requirements.txt
 

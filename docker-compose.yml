@@ -3,12 +3,9 @@ version: '3'
 services:
 
   flaskapp:
-    build: .
+    build: ./pythonApp
     image: flask_gunicorn:latest
     container_name: flaskapp
-    #ports:
-    #  - "5000:5000"
-    #network_mode: bridge
 
   nginx:
     build: ./nginx
@@ -19,7 +16,6 @@ services:
     ports:
       - "80:80"
     restart: always
-    #network_mode: bridge
 
 networks:
   default:
