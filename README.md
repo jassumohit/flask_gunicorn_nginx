@@ -5,11 +5,11 @@
 
 ## Description  
 FlaskApp [docker image](https://hub.docker.com/r/jassumohit/sample_flask) makes use of Alpine Linux as base layer alongwith Python and Gunicorn. [Gunicorn](https://docs.gunicorn.org/en/stable/) acts as server gateway interface
-between [flask](https://www.fullstackpython.com/flask.html) and [nginx](https://www.nginx.com/), due to it's light weight and high speed used in most python based small web applications.  
+between [flask](https://www.fullstackpython.com/flask.html) and [nginx](https://www.nginx.com/), due to it's light weight and high speed small web applications.  
 
 Docker Link -  
-FlaskApp:  https://hub.docker.com/r/jassumohit/sample_flask
-Nginx:  
+FlaskApp:  https://hub.docker.com/r/jassumohit/sample_flask  
+Nginx:  https://hub.docker.com/r/jassumohit/nginxnew  
 
 ### Pre-requisites -  
 1. Docker
