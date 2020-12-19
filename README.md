@@ -21,10 +21,12 @@ Nginx:  https://hub.docker.com/r/jassumohit/nginxnew
 4. Run  
 `docker-compose up`  
 
-
 Following lines will display on command line  
 
 ![alt text](https://github.com/jassumohit/sample_flask/blob/master/screenshot.JPG?raw=true)  
+
+Hit the URL - **http://localhost**  
+
 
 ### Step to stop  
 1. Open another command line  
